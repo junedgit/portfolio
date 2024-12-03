@@ -1,18 +1,18 @@
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
 import { navItems } from "@/data";
-import React from "react";
+import Link from 'next/link'
 
 const page = () => {
   return (
     <>
       <div className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
         <header className="fixed top-2 left-3 p-5 ">
-          <a href="/">
-            <button className="bg-gray-600 px-3 py-1 text-white rounded-sm fixed">
-              Go to Home
-            </button>
-          </a>
+         <Link href="/" className="bg-gray-600 px-3 py-1 text-white rounded-sm fixed">
+           <button>
+             Go to Home
+           </button>
+         </Link>
         </header>
         <div className="max-w-7xl w-full mt-5">
           <main>
