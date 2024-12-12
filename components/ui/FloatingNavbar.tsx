@@ -1,4 +1,7 @@
 "use client";
+
+import { HiOutlineHome } from "react-icons/hi";
+
 import React, { useState } from "react";
 import {
   motion,
@@ -55,7 +58,7 @@ export const FloatingNav = ({
           opacity: visible ? 1 : 0,
         }}
         transition={{
-          duration: 0.2,
+          duration: 0.5,
         }}
         className={cn(
           // change rounded-full to rounded-lg
@@ -66,9 +69,9 @@ export const FloatingNav = ({
         )}
         style={{
           backdropFilter: "blur(16px) saturate(180%)",
-          backgroundColor: "rgba(17, 25, 40, 0.75)",
+          backgroundColor: "rgba(36,36,36, 0.5)",
           borderRadius: "12px",
-          border: "1px solid rgba(255, 255, 255, 0.125)",
+          border: "1px solid rgba(100, 100, 100, 0.2)",
         }}
       >
         {navItems.map((navItem: any, idx: number) => (
@@ -84,7 +87,15 @@ export const FloatingNav = ({
             {/* remove hidden sm:block for the mobile responsive */}
             <span className=" text-sm !cursor-pointer">{navItem.name}</span>
           </Link>
-        ))}
+        ))}{" "}
+        <a
+          href={"https://github.com/junedgit"}
+          target="_blank"
+          className="relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+        >
+          {" "}
+          <span className=" text-sm !cursor-pointer">{"GitHub"}</span>
+        </a>
         {/* remove this login btn */}
         {/* <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
           <span>Login</span>

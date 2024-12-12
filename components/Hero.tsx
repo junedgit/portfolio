@@ -10,7 +10,7 @@ const Hero = () => {
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
        */}
-      <div>
+      {/* <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="white"
@@ -20,7 +20,7 @@ const Hero = () => {
           fill="purple"
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
-      </div>
+      </div> */}
 
       {/**
        *  UI: grid
@@ -28,7 +28,7 @@ const Hero = () => {
        *  0.2 to 0.03
        */}
       <div
-        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.05] bg-grid-pink-100/[0.3]
        absolute top-0 left-0 flex items-center justify-center"
       >
         {/* Radial gradient for the container to give a faded look */}
@@ -39,31 +39,29 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex justify-center relative my-16 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Hi there! <span>Welcome to my Personal Portfolio</span>
+          <p className="uppercase items-start tracking-widest text-xs text-center text-blue-100 max-w-80">
+            This is a portfolio of
           </p>
-
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
            *
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="I am Junaid Ahmed,"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            words="Juned Shaik"
+            className="text-center text-[40px]  md:text-5xl lg:text-6xl"
           />
 
           <TextGenerateEffect
-            words="a Linux Expert & Web Developer"
+            words="a DevOps && FullStack Developer;"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
-
-          <div className="text-center max-w-full mb-4 mt-7 text-sm md:text-lg md:tracking-wider lg:text-2xl">
+          <div className="text-center max-w-full mb-4 mt-7 text-sm md:text-lg md:tracking-wider lg:text-xl">
             <p>
-              Currently I am Mastering{" "}
-              <span className="text-orange-600">
+              Currently Mastering{" "}
+              <span className="text-orange-500 font-bold">
                 Rust{" "}
                 <a href="https://www.rust-lang.org/" target="_blank">
                   {" "}
@@ -71,7 +69,7 @@ const Hero = () => {
                 </a>
               </span>{" "}
               and{" "}
-              <span className="text-blue-400 mb-4">
+              <span className="text-blue-400 mb-4 font-bold">
                 React {""}
                 <FaReact className="inline-block" />
               </span>
