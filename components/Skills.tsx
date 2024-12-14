@@ -31,7 +31,7 @@ const SkillSection = ({
 export default function PortfolioSkills() {
   return (
     <div className="max-w-4xl mx-auto sm:pt-[11%] pt-[25%]  rounded-2xl relative   shadow-[0px_0px_5px_0px_#111] ">
-      <h1 className="text-4xl font-bold mb-8 py-4  font-mono text-slate-200/90 text-center">
+      <h1 className="heading">
         Technical <span className="text-purple">Expertise</span>
       </h1>
       <div className="grid md:grid-cols-2 gap-8">
