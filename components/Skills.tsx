@@ -42,7 +42,7 @@ export default function PortfolioSkills() {
             "React.js & Next.js",
             "Redux & Zustand",
             "Tailwind CSS",
-            "GSAP & Framer Motion",
+            "Basic GSAP",
             "Experiance in UI Libraies",
           ]}
         />
