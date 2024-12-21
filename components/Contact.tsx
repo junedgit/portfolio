@@ -11,7 +11,7 @@ const Contact = () => {
             className="w-16 h-16 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
           >
             <a href={info.link} target="_blank">
-              <img src={info.img} alt="icons" width={50} height={50} />
+              <img src={info.img} alt="icons" width={40} height={40} />
             </a>
           </div>
         ))}
