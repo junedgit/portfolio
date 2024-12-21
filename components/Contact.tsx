@@ -8,7 +8,7 @@ const Contact = () => {
         {socialMedia.map((info) => (
           <div
             key={info.id}
-            className="w-20 h-20 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+            className="w-16 h-16 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
           >
             <a href={info.link} target="_blank">
               <img src={info.img} alt="icons" width={50} height={50} />
